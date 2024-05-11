@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Agrega el alias al archivo .bashrc
 echo "alias udp='/root/udp.sh'" >> ~/.bashrc
