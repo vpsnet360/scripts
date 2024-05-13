@@ -3,9 +3,8 @@
 # Agrega el alias al archivo .bashrc
 echo "alias udp='/root/install_udp.sh'" >> ~/.bashrc
 
-
+# Recarga el archivo .bashrc para que el alias sea efectivo
 source ~/.bashrc
-
 
 pausa(){
   echo -ne "\033[1;37m"
