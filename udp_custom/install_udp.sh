@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Agrega el alias al archivo .bashrc
-echo "alias udp='/root/udp.sh'" >> ~/.bashrc
-
-
-source ~/.bashrc
-
-
 
 pausa(){
   echo -ne "\033[1;37m"
@@ -52,12 +45,12 @@ EOF
 
 download_udpServer(){
   echo -e "\e[1;34mDescargando binario UDPserver V 1.2"
-  wget -O /bin/UDP-Custom 'https://raw.githubusercontent.com/vpsnet360/scripts/main/udp_custom/udp-amd64.bin' -q --show-progress
+  wget -O /bin/UDP-Custom 'https://raw.githubusercontent.com/joaquin1444/udp/main/udp-amd64.bin' -q --show-progress
   chmod +x /bin/UDP-Custom
   echo -e "\e[1;32mDescarga y configuración del binario completada\e[0m"
 
   echo -e "\e[1;34mDescargando Config UDPserver"
-  wget -O /etc/udp/config.json 'https://raw.githubusercontent.com/vpsnet360/scripts/main/udp_custom/config.json' -q --show-progress
+  wget -O /etc/udp/config.json 'https://raw.githubusercontent.com/joaquin1444/udp/main/config.json' -q --show-progress
   chmod 644 /etc/udp/config.json
   echo -e "\e[1;32mDescarga y configuración del archivo de configuración completada\e[0m"
 
