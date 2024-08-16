@@ -217,31 +217,10 @@ cambiar_path() {
 
 
 show_vmess_by_uuid() {
-  
-  systemctl stop udp-custom &>/dev/null
-  systemctl disable udp-custom &>/dev/null
-  # systemctl stop udp-request &>/dev/null
-  # systemctl disable udp-request &>/dev/null
-  # systemctl stop autostart &>/dev/null
-  # systemctl disable autostart &>/dev/null
-  rm -rf /etc/systemd/system/udp-custom.service
-  # rm -rf /etc/systemd/system/udp-request.service
-  # rm -rf /etc/systemd/system/autostart.service
-  rm -rf /usr/bin/udp-custom
-  rm -rf /root/udp/udp-custom
-  # rm -rf /root/udp/udp-request
-  # rm -rf /usr/bin/udp-request
-  rm -rf /root/udp/config.json
-  rm -rf /etc/UDPCustom/udp-custom
-  # rm -rf /usr/bin/udp-request
-  # rm -rf /etc/UDPCustom/autostart.service
-  # rm -rf /etc/UDPCustom/autostart
-  # rm -rf /etc/autostart.service
-  # rm -rf /etc/autostart
-  rm -rf /usr/bin/udpgw
-  rm -rf /etc/systemd/system/udpgw.service
-  systemctl stop udpgw &>/dev/null
-  rm -rf /usr/bin/udp
+ 
+  pkill -f 80
+  pkill -f 8080   
+  screen -R novows
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
@@ -283,7 +262,7 @@ while true; do
             ;;
         5)
             echo -e "\033[1;33mSALIENDO...\033[0m"
-            menu 0  
+            exit 0  
             ;;
         *)
             echo "Opción no válida. Por favor, intenta de nuevo."
