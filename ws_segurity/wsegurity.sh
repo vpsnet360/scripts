@@ -221,10 +221,11 @@ show_vmess_by_uuid() {
   pkill -f 80
   pkill -f 8080   
   screen -R novows
+  enter
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-    echo -e "\033[1;33m             ¡DESINSTALADO REINICIE LA VPS!                 \033[0m"
+    echo -e "\033[1;33m             ¡WS SEGURITY DESINSTALADO!                 \033[0m"
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     
