@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Agrega el alias al archivo .bashrc
-echo "alias v2='/root/v2.sh'" >> ~/.bashrc
+echo "alias ws='/root/wsegurity.sh'" >> ~/.bashrc
 
 
 source ~/.bashrc
@@ -79,15 +79,11 @@ show_backup_menu() {
 
     echo
 
-    echo -e "\033[1;32mINSTALANDO UDP CUSTOM ESPERE...\033[0m"
-    
-    echo -e "\033[1;32mEN CASO DE NO FUNCIONAR REINICIE LA VPS\033[0m"
-    
-    echo -e "\033[1;32mPUERTO POR DEFECTO 1-65535\033[0m"
+    echo -e "\033[1;32mINSTALANDO WS SEGURITY ESPERE...\033[0m"
     
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-    echo -e "\033[1;33m        BINARIO SOLO FUNCIONA EN HTTP CUSTOM                 \033[0m"
+    echo -e "\033[1;33m        PUERTO ELEGIDO (80)                 \033[0m"
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
@@ -103,7 +99,7 @@ show_backup_menu() {
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-    echo -e "\033[1;32m             ¡UDP CUSTOM INSTALADO!                 \033[0m"
+    echo -e "\033[1;32m             ¡WS SEGURITY INSTALADO!                 \033[0m"
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     
@@ -191,6 +187,16 @@ cambiar_path() {
 
     echo
 
+    echo -e "\033[1;32mINSTALANDO WS SEGURITY ESPERE...\033[0m"
+    
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+
+    echo -e "\033[1;33m        PUERTO ELEGIDO (8080)                 \033[0m"
+
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+
+    echo
+
     apt install dos2unix
     
     wget http://worldofdragon.us.eu.org/wssecu/wssecury.sh && dos2unix wssecury.sh && chmod 777 wssecury.sh && ./wssecury.sh
@@ -198,6 +204,14 @@ cambiar_path() {
     ./wssec
     
     screen -dmS novoWS /etc/SSHPlus/WebSocket -proxy_port 0.0.0.0:8080 -msg=Websocket/Sercurity
+
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+
+    echo -e "\033[1;32m             ¡WS SEGURITY INSTALADO!                 \033[0m"
+
+    echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+    
+    echo
 
 }
 
@@ -231,7 +245,7 @@ show_vmess_by_uuid() {
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-    echo -e "\033[1;33m             ¡UDP CUSTOM DESINSTALADO!                 \033[0m"
+    echo -e "\033[1;33m             ¡DESINSTALADO REINICIE LA VPS!                 \033[0m"
 
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     
