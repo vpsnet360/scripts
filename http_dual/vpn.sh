@@ -1,11 +1,5 @@
 ##!/usr/bin/env zsh
 
-# Agrega el alias al archivo .bashrc
-echo "alias vpn='/root/vpn.sh'" >> ~/.bashrc
-
-# Recarga el archivo .bashrc para que el alias sea efectivo
-source ~/.bashrc
-
 # Configuración de colores
 RED='\033[0;31m'
 GREEN='\033[0;32m'
