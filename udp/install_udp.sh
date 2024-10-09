@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Agrega el alias al archivo .bashrc
+echo "alias udp='/root/install_udp.sh'" >> ~/.bashrc
+
+# Recarga el archivo .bashrc para que el alias sea efectivo
+source ~/.bashrc
+
 msg() {
   local colors="/etc/new-adm-color"
   if [[ ! -e $colors ]]; then
@@ -77,7 +83,7 @@ pausa(){
 tittle () {
     clear&&clear
     msg -bar2
-    echo -e "     \033[1;44;44m   \033[1;33m=====>>►► mod by joaquin ◄◄<<=====  \033[0m  \033[0;33m"
+    echo -e "     \033[1;44;44m   \033[1;33m=====>>►► mod by manu ◄◄<<=====  \033[0m  \033[0;33m"
     
     
 }
@@ -88,8 +94,8 @@ info() {
   puerto=$1
   echo -e "\e[1;33m         INSTALADOR UDP CUSTOM | "
   echo -e "\e[1;36m         SOURCE OFICIAL DE Epro Dev Team"
-  echo -e "             https://t.me/joaquinH2"
-  echo -e "\e[1;35m         CODIGO REFACTORIZADO POR JOAQUIN\e[0m"
+  echo -e "             https://t.me/manu360x"
+  echo -e "\e[1;35m         CODIGO REFACTORIZADO POR MAGNU\e[0m"
   [[ -z ${puerto} ]] || add.user ${puerto}
   pausa
   clear
@@ -202,7 +208,7 @@ watch_logs() {
 function manage_iptables() {
   while true; do
     clear
-    tittle "mod by joaquin"
+    tittle "mod by manu"
     echo -e "\e[1;34mReglas actuales en iptables (UDP):\e[0m"
     iptables -t nat -L PREROUTING -n --line-numbers | grep udp
     echo -e "\nSeleccione una acción:"
@@ -261,7 +267,7 @@ function manage_iptables() {
         ;;
       3) 
         clear
-        tittle "mod by joaquin"
+        tittle "mod by manu"
         msg -ama "Información sobre configuración de reglas UDP:\n"
         msg -ama "Para el funcionamiento correcto del servicio UDP,\nes obligatorio configurar una regla en iptables."
         msg -ama "Esta regla redirige el tráfico UDP al puerto local"
