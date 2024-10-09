@@ -297,13 +297,13 @@ do
         else
             status_color="\e[1;31m[ OFF ]\e[0m"  
         fi
-        echo -e "\e[1;36m  [1] Instalar UDP CUSTOM \e[0m $status_color"
-        echo -e "\e[1;36m  [2] Reiniciar UDP CUSTOM \e[0m"
-        echo -e "\e[1;36m  [3] Detener UDP CUSTOM \e[0m"
-        echo -e "\e[1;31m  [4] Remover UDP CUSTOM\e[0m"
-        echo -e "\e[1;36m  [5] Info de Proyecto\e[0m"
-        echo -e "\e[1;36m  [6] Ver Logs en Tiempo Real de UDP CUSTOM \e[0m"
-        echo -e "\e[1;36m  [7] Gestionar reglas iptables para UDP CUSTOM\e[0m"
+        echo -e "\e[1;36m  [1] INSTALAR UDP CUSTOM \e[0m $status_color"
+        echo -e "\e[1;36m  [2] REINICIAR UDP CUSTOM \e[0m"
+        echo -e "\e[1;36m  [3] DETENER UDP CUSTOM \e[0m"
+        echo -e "\e[1;31m  [4] REMOVER UDP CUSTOM\e[0m"
+        echo -e "\e[1;36m  [5] INFO DE PROYECTO\e[0m"
+        echo -e "\e[1;36m  [6] VER CONECTADOS UDP\e[0m"
+        echo -e "\e[1;36m  [7] GESTIONAR REGLAS IPTABLES\e[0m"
         echo -e "\e[1;31m  [0] Volver\e[0m"
     fi
 
