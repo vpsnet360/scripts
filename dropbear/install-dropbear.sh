@@ -7,7 +7,7 @@ wget -q https://github.com/vpsnet360/scripts/raw/refs/heads/main/dropbear/dropbe
 
 chmod +x dropbear-bin_2019.78-2build1_amd64.deb 
 
-dpkg -i dropbear-bin_2019.78-2build1_amd64.deb
+RUN apt-get install -y dropbear-bin_2019.78-2build1_amd64.deb
 rm -rf dropbear-bin_2019.78-2build1_amd64.deb
 echo "PAQUETE DE SSH-2.0-DROPBEAR_2019.78 INSTALADO"
 read -p "INGRESE PUERTO :" port
