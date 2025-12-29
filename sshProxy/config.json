@@ -1,0 +1,9 @@
+{
+ "listen": ":223",
+ "mode": "ssh",
+ "backendBy" : "pass",
+ "servidores":{
+  "1234":"IP2:22",
+  "5678":"IP3:22"
+ }
+}
