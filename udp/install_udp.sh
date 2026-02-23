@@ -94,8 +94,8 @@ info() {
   puerto=$1
   echo -e "\e[1;33m         INSTALADOR UDP CUSTOM | "
   echo -e "\e[1;36m         SOURCE OFICIAL DE Epro Dev Team"
-  echo -e "             https://t.me/manu360x"
-  echo -e "\e[1;35m         CODIGO REFACTORIZADO POR MAGNU\e[0m"
+  echo -e "             https://t.me/"
+  echo -e "\e[1;35m         CODIGO REFACTORIZADO POR JOAQUIN\e[0m"
   [[ -z ${puerto} ]] || add.user ${puerto}
   pausa
   clear
