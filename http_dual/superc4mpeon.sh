@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Agrega el alias al archivo .bashrc
-echo "alias front='/root/superc4mpeon.sh" >> ~/.bashrc
-
-# Recarga el archivo .bashrc para que el alias sea efectivo
-source ~/.bashrc
-
 # ==================================================
 # SCRIPT: superc4mpeon - GESTOR BACKEND CLOUDFRONT
 # VERSIÓN: 3.0 - CON EXPIRACIÓN EN MINUTOS
@@ -61,6 +55,25 @@ show_banner() {
     echo -e "\E[41;1;37m                GESTOR BACKEND CLOUDFRONT V6.0                 \E[0m"
     echo -e "${TURQUESA}════════════════════════════════════════════════════════${SEMCOR}"
 }
+
+SCRIPT_PATH="/root/superc4mpeon.sh"
+LINK_PATH="/bin/menu2"
+
+if [ ! -f "$SCRIPT_PATH" ]; then
+    exit 1
+fi
+
+if [ ! -L "$LINK_PATH" ]; then
+    sudo ln -s "$SCRIPT_PATH" "$LINK_PATH"
+    sudo chmod +x "$LINK_PATH"
+fi
+
+if [ ! -x "$SCRIPT_PATH" ]; then
+    sudo chmod +x "$SCRIPT_PATH"
+fi
+
+
+ins
 
 # ============ VERIFICAR Y ELIMINAR BACKENDS EXPIRADOS (CON AWK) ============
 check_and_clean_expired() {
