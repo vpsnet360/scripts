@@ -766,7 +766,7 @@ manage_backends() {
             fi
         done < "$USER_DATA"
     else
-        echo -e "${AMARILLO}  No hay backends personalizados configurados${SEMCOR}"
+        echo -e "${AMARILLO}  NO HAY BACKENDS PERSONALIZADOS CONFIGURADOS${SEMCOR}"
     fi
     
     echo -e "${CIAN}════════════════════════════════════════════════════════${SEMCOR}"
@@ -774,7 +774,6 @@ manage_backends() {
     
     # Mostrar backends del sistema fijos
     echo -e "${VERDE}🔧 LOCAL → http://127.0.0.1:8080 (Fijo)${SEMCOR}"
-    echo -e "${VERDE}🔧 SSH → http://127.0.0.1:22 (Fijo)${SEMCOR}"
     
     msg -bar2
     
